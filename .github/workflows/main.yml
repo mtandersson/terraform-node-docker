@@ -48,6 +48,6 @@ jobs:
       - name: Extract tag
         run: |
           set -e -x
-          TAG=$(grep -Po 'terraform-nodejs:\K(.*)' Dockerfile)
+          TAG=$(grep -Po 'hashicorp/terraform:\K(.*)' Dockerfile)
           git tag $TAG || echo "Existing tag"
           git push origin $TAG || echo "tag exists"
