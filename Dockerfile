@@ -1,4 +1,4 @@
-FROM hashicorp/terraform:1.5.2
+FROM hashicorp/terraform:1.5.3
 
 RUN apk --update --no-cache add \
   nodejs npm yarn bash \
